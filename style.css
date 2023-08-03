@@ -1,0 +1,259 @@
+
+
+
+:root {
+    --os: 'Oswald', sans-serif;
+    --rb:'Roboto', sans-serif;
+  }
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--rb);
+}
+
+
+.navbar{
+    width: 80%;
+    padding: 1% 0%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    
+
+}
+
+
+@media (max-width:590px) {
+    .navbar{
+        width: 95%;
+    }
+}
+
+.navbartop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.573);
+}
+
+
+
+.navbartop .language{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    column-gap: 20px;
+    color: gray;
+    font-size: 13px;
+   
+}
+
+.navbartop .options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 20px;
+    color: gray;
+    font-size: 13px;
+}
+
+.navbarbottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% 0%;
+
+    
+}
+
+@media (max-width:500px) {
+    .navbarbottom{
+        border-bottom: 1px solid #ff00004a;
+    }
+}
+
+.navbarbottom .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.navbarbottom .logo img{
+    width: 32px;
+    margin-right: 10px;
+}
+
+
+.navbarbottom .logo h2{
+    color: red;
+    font-size: 24px;
+}
+
+@media (max-width:600px) {
+    
+.navbarbottom .logo img{
+    width: 25px;
+}
+
+
+.navbarbottom .logo h2{
+    font-size: 19px;
+}
+
+}
+
+
+select{
+    background-color: red;
+    color: white;
+    height: 33px;
+    width: 80px;
+    border-radius: 4px;
+}
+
+@media (max-width:927px) {
+    select{
+        display: none;
+    }
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.searchbox input{
+    width: 300px;
+    height: 33px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+   
+
+}
+
+@media (max-width:600px) {
+    .searchbox input{
+        width: 80%;
+        padding: 0px 5px;
+    }
+}
+
+.searchbox .lens{
+    background-color: red;
+    padding: 6px 10px;
+    border-radius: 3px;
+    margin-right: 3px;
+
+}
+
+.searchbox .lens img{
+    width: 15px;
+}
+
+
+@media (max-width:500px) {
+    .navbartop{
+       display: none;
+    }
+
+    .searchbox{
+        max-width: 56%;
+    }
+
+    .searchbox input{
+        height: 30px;
+    }
+
+    .searchbox .lens{  
+        padding: 3px 8px;
+    }
+
+    .searchbox .lens img{
+        width: 12px;
+    }
+}
+
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+@media (max-width:830px) {
+    .options{
+        display: none;
+    }
+}
+
+.options div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 3px;
+
+}
+
+.options div img{
+    width: 17px;
+}
+
+.options div p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+.hamburger{
+    width: 26px;
+}
+
+
+@media (min-width:600px) {
+    .hamburger{
+        display: none;
+    }    
+}
+
+
+.itemslist{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1%;
+    flex-wrap: wrap;
+}
+
+@media (max-width:650px) {
+    .itemslist{
+        display: none;
+    }
+}
+
+.itemslist p{
+    font-size: 13px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: 0.25s;
+
+}
+
+.itemslist p:hover{
+    background-color: rgb(215, 233, 248);
+}
