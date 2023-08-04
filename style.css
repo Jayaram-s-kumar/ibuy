@@ -257,3 +257,414 @@ select{
 .itemslist p:hover{
     background-color: rgb(215, 233, 248);
 }
+
+.horizontalitems{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.horizontalitems div{
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width:600px) {
+    .horizontalitems div{
+        width: 50px;
+        height: 50px;
+    }
+
+    .horizontalitems{
+        width: 95%;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (max-width:450px) {
+    .horizontalitems{
+        display: none;
+    }
+}
+
+.horizontalitems div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.aerogelbooksection{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (max-width:600px) {
+    .aerogelbooksection{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .aerogelbooksection{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width:450px) {
+    .aerogelbooksection{
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+.aerogelbooksection .aerogel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 30px 20px;
+    border-radius: 5px;
+    width: 60%;
+    min-width: 526px;
+    min-height: 229px;
+    
+}
+
+@media (max-width:660px) {
+    .aerogelbooksection .aerogel{
+        flex-direction: column;
+        row-gap: 40px;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+}
+
+.aerogelbooksection .aerogel .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    padding-left: 6%;
+}
+
+
+
+.aerogelbooksection .aerogel h1{
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+
+.aerogelbooksection .aerogel p{
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.aerogelbooksection .aerogel button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.779);
+    border: 1px solid rgba(255, 255, 255, 0.799);
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}
+
+.aerogelbooksection .imagecont{
+    width: 40%;
+}
+
+.aerogelbooksection .imagecont img{
+    width: 100%;
+    min-width: 179px;
+}
+
+@media (max-width:450px) {
+    .aerogelbooksection .aerogel h1{
+        font-size: 30px;
+    }
+
+    .aerogelbooksection .aerogel p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .aerogelbooksection .aerogel button{
+        font-size: 11px;
+        padding: 8px 15px;
+        letter-spacing: 1px;
+    }
+
+    .aerogelbooksection .imagecont{
+        width: 80%;
+    }
+}
+
+
+.aerogelbooksection .book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(#dfa669, #333574);
+    border-radius: 4px;
+    width: 15%;
+    min-height: 280px;
+    min-width: 180px;
+
+}
+
+.aerogelbooksection .book img{
+    width: 50%;
+}
+
+.aerogelbooksection .book p{
+    color: white;
+    font-size: 13px;
+}
+
+.aerogelbooksection .book p:nth-child(2){
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.aerogelbooksection .book button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.779);
+    border: 1px solid rgba(255, 255, 255, 0.799);
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:450px) {
+    .aerogelbooksection .book{
+        min-width: none;
+        min-height: none;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .aerogelbooksection .book img{
+        width: 60%;
+    }
+
+    .aerogelbooksection .book p{
+        font-size: 18px;
+        
+    }
+
+    .aerogelbooksection .book p:first-child{
+        margin-bottom: 0px;
+    }
+    
+    .aerogelbooksection .book p:nth-child(2){
+        font-size: 13px;
+    }
+    
+    
+}
+
+.newbookssection{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.newbookssection .titlesection{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .newbookssection .titlesection{
+        margin-bottom: 0px;
+    }
+}
+
+.newbookssection .titlesection p{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.newbookssection .titlesection p:nth-child(2){
+    font-size: 13px;
+    font-weight: normal;
+    color: gray;
+    
+}
+
+.newbookssection .cardscont{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+
+
+
+.newbookssection .cardscont .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 380px;
+    justify-content: center;
+
+}
+
+@media (max-width:800px) {
+    .newbookssection .cardscont .card{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       
+    }
+
+    .newbookssection .cardscont{
+        gap: 20px;
+    }
+}
+
+
+.newbookssection .cardscont .card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.newbookssection .cardscont .card .price{
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.newbookssection .cardscont .card .title{
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.664);
+    width: 80%;
+}
+
+.newbookssection .cardscont .card .installment{
+    font-size: 12px;
+    color: gray;
+}
+
+.newbookssection .cardscont .card .ratings{
+
+}
+
+.newbookssection .cardscont .card .ratings img{
+    width: 15px;
+    height: 15px;
+}
+
+.newbookssection a{
+    margin: auto;
+}
+
+.newbookssection button{
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.779);
+    border: 1px solid rgba(0, 0, 0, 0.799);
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: 600;
+   
+}
+
+.whysocheap{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    column-gap: 30px;
+    min-width: 650px;
+}
+
+
+
+.whysocheap p{
+    font-size: 13px;
+    color: gray;
+    
+}
+
+.whysocheap p:first-child{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.whysocheap p:nth-child(2){
+    width: 60%;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.whysocheap img{
+    width: 130px;
+}
+
+@media (max-width:700px) {
+    .whysocheap{
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        text-align: center;
+        min-width: fit-content;
+        margin-top: 70px;
+        
+    }
+
+    .whysocheap p:nth-child(2){
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .whysocheap p:first-child{
+        width: 80%;
+        text-align: left;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .whysocheap img{
+        width: 90px;
+    }
+}
