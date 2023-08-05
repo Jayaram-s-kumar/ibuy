@@ -707,10 +707,14 @@ select {
     height: fit-content;
     width: 100%;
     overflow: scroll;
-
-
-
+    overflow-y: hidden;
+    
 }
+
+
+.allfeatures::-webkit-scrollbar {
+    display: none; 
+  }
 
 
 .allfeatures .eachitem {
